@@ -1,7 +1,6 @@
 function szoveg() {
     let szoveg = document.getElementById("inputSzoveg").value;
     document.getElementById("elonezet").innerHTML = szoveg;
-
  }
 
  function betumeret() {
@@ -19,11 +18,20 @@ function szoveg() {
      document.getElementById("elonezet").style.backgroundColor = inputHatterszin;
  }
 
+ function alaphelyzet() {
+     document.getElementById("inputSzoveg").value = "Árvíztűrő tükörfúrógép";
+     document.getElementById("inputBetumeret").value = 12;
+     document.getElementById("inputSzovegszin").value = "#000000";
+     document.getElementById("inputHatterszin").value = "#ffffff";
+     document.getElementById("elonezet").innerHTML = "";
+ }
+
 function init() {
     document.getElementById("inputSzoveg").addEventListener("input", szoveg);
     document.getElementById("inputBetumeret").addEventListener("input", betumeret);
     document.getElementById("inputSzovegszin").addEventListener("input", szovegszin);
     document.getElementById("inputHatterszin").addEventListener("input", hatterszin);
+    document.getElementById("alaphelyzet_gomb").addEventListener("click", alaphelyzet);
 }
 
 document.addEventListener("DOMContentLoaded", init);

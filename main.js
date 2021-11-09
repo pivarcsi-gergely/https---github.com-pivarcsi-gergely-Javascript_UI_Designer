@@ -30,6 +30,9 @@ function szoveg() {
      document.getElementById("inputBetumeret").value = 12;
      document.getElementById("inputSzovegszin").value = "#000000";
      document.getElementById("inputHatterszin").value = "#ffffff";
+     document.getElementById("elonezet").style.fontSize = 12 + "pt";
+     document.getElementById("elonezet").style.color = "black";
+     document.getElementById("elonezet").style.backgroundColor = "white";
      document.getElementById("elonezet").innerHTML = "";
      document.getElementById("szovegHiba").innerHTML = "";
  }

@@ -1,6 +1,13 @@
 function szoveg() {
     let szoveg = document.getElementById("inputSzoveg").value;
-    document.getElementById("elonezet").innerHTML = szoveg;
+    if (szoveg == "" || !szoveg.trim()) {
+        document.getElementById("szovegHiba").innerHTML = "A mintaszöveg nem lehet üres!";
+        document.getElementById("elonezet").innerHTML = "";
+    }
+    else {
+        document.getElementById("elonezet").innerHTML = szoveg;
+        document.getElementById("szovegHiba").innerHTML = "";
+    }
  }
 
  function betumeret() {
@@ -24,6 +31,7 @@ function szoveg() {
      document.getElementById("inputSzovegszin").value = "#000000";
      document.getElementById("inputHatterszin").value = "#ffffff";
      document.getElementById("elonezet").innerHTML = "";
+     document.getElementById("szovegHiba").innerHTML = "";
  }
 
 function init() {

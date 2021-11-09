@@ -1,5 +1,5 @@
 .konténer {
-    width: 30%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -27,4 +27,9 @@ input {
 
 input:last-child {
     width: initial;
+}
+
+.hiba {
+    font-size: 0.85em;
+    color: red;
 }
